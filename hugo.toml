@@ -1,4 +1,4 @@
-baseURL = "601442991.github.io"
+baseURL = "https://601442991.github.io"
 languageCode = "zh-CN"
 title = "Dirge的博客"
 theme = "maupassant"

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dirge的博客</title>
+    <link>https://601442991.github.io/</link>
+    <description>Recent content on Dirge的博客</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 03 Jun 2025 12:54:24 +0800</lastBuildDate>
+    <atom:link href="https://601442991.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Config</title>
+      <link>https://601442991.github.io/tools/</link>
+      <pubDate>Tue, 03 Jun 2025 12:54:24 +0800</pubDate>
+      <guid>https://601442991.github.io/tools/</guid>
+      <description>&lt;h1 id=&#34;ssh-配置&#34;&gt;ssh 配置&lt;/h1&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;StrictHostKeyChecking no&#xA;UserKnownHostsFile /dev/null&#xA;&#xA;Host relay&#xA;    HostName relay.corp.kuaishou.com&#xA;    ControlMaster auto&#xA;    ControlPath ~/.ssh/tmp/master-%r@%h:%p&#xA;    ControlPersist yes&#xA;    ServerAliveInterval 60&#xA;&#xA;Host dev&#xA;    HostName 172.28.206.144&#xA;    User linhaocheng&#xA;    ForwardAgent yes&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;git-配置&#34;&gt;git 配置&lt;/h1&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[user]&#xA;        name = linhaocheng&#xA;        email = linhaocheng@kuaishou.com&#xA;[credential]&#xA;        helper = osxkeychain&#xA;[core]&#xA;        editor = vim&#xA;        autocrlf = input&#xA;        safecrlf = warn&#xA;[pull]&#xA;        rebase = true&#xA;[fetch]&#xA;        prune = true&#xA;[diff]&#xA;        colorMoved = zebra&#xA;        tool = vimdiff&#xA;        submodule = log&#xA;[difftool]&#xA;        prompt = false&#xA;[alias]&#xA;        lg = log --graph --pretty=format:&amp;#39;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ci) %C(bold blue)&amp;lt;%an&amp;gt;%Creset&amp;#39;&#xA;        lp = log --pretty=format:&amp;#39;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ci) %C(bold blue)&amp;lt;%an&amp;gt;%Creset&amp;#39;&#xA;        myswitch = &amp;#34;!bash -c &amp;#39;changes=$(git status -uno -s); if [[ -z $changes ]];then git switch $0 $@; else git status; fi&amp;#39;&amp;#34;&#xA;[url &amp;#34;git@git.corp.kuaishou.com:&amp;#34;]&#xA;        insteadOf = https://git.corp.kuaishou.com/&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>归档</title>
+      <link>https://601442991.github.io/archives/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://601442991.github.io/archives/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
