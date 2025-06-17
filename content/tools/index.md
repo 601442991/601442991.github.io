@@ -10,7 +10,7 @@ StrictHostKeyChecking no
 UserKnownHostsFile /dev/null
 
 Host relay
-    HostName relay.corp.kuaishou.com
+    HostName **.com
     ControlMaster auto
     ControlPath ~/.ssh/tmp/master-%r@%h:%p
     ControlPersist yes
@@ -46,6 +46,4 @@ Host dev
         lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ci) %C(bold blue)<%an>%Creset'
         lp = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ci) %C(bold blue)<%an>%Creset'
         myswitch = "!bash -c 'changes=$(git status -uno -s); if [[ -z $changes ]];then git switch $0 $@; else git status; fi'"
-[url "git@git.corp.kuaishou.com:"]
-        insteadOf = https://git.corp.kuaishou.com/
 ```
